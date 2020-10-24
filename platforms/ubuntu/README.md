@@ -1,4 +1,4 @@
-# Ubuntu 20.04
+# Ubuntu LTS 20.04
 
 [**Ubuntu**](https://ubuntu.com) was the first Linux distribution to support Swift. Unfortunately, Swift isn’t available as a native package yet, so you’ll have to download and install it manually.
 

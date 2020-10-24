@@ -6,16 +6,21 @@ Our goal is to support the adoption of Swift as a general purpose cross-platform
 
 ## Platforms
 
+We only provide instructions for the latest release of each supported platform. These instructions *may* also apply to older releases:
+
 - [CentOS / Red Hat Enterprise Linux 8](platforms/centos/README.md)
 - [Fedora 32](platforms/fedora/README.md)
-- [macOS](platforms/macOS/README.md)
-- [Ubuntu 20.04](platforms/ubuntu-2004/README.md)
+- [macOS Catalina](platforms/macOS/README.md)
+- [Ubuntu LTS 20.04](platforms/ubuntu/README.md)
 
 ## Editors and IDEs
 
-- [Gedit (Ubuntu)](editors/gedit/README.md)
-- [Visual Studio Code (Ubuntu)](editors/vscode-ubuntu/README.md)
-- [Xcode (macOS)](editors/xcode/README.md)
+- [Gedit](editors/gedit/README.md)
+    * Ubuntu LTS 20.04
+- [Visual Studio Code](editors/vscode-linux/README.md)
+    * Ubuntu LTS 20.04
+- [Xcode](editors/xcode/README.md)
+    * macOS Catalina
 
 ## Contributing
 

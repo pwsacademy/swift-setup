@@ -1,4 +1,4 @@
-# macOS
+# macOS Catalina
 
 On macOS, Swift comes bundled with [**Xcode**](../../editors/xcode/README.md), which is Apple’s integrated development environment (IDE). Xcode includes everything you need to create Swift applications for Apple platforms.
 
