@@ -1,7 +1,6 @@
-# Fedora
+# Fedora 32
 
-[**Fedora**](https://getfedora.org) is not the first version of Linux to support Swift, but _is_ the first version to have a native package for easy installation.
-
+[**Fedora**](https://getfedora.org) isn’t officially supported yet, but it has excellent support for Swift and even provides a native package for easy installation.
 
 To install Swift on Fedora, open the **Terminal** program and run the following command:
 
@@ -19,5 +18,5 @@ swift --version
 
 ---
 
-Last updated: 22 Oct. 2020 \
+Last updated: 24 Oct. 2020 \
 Author: [Ron Olson](https://github.com/tachoknight)
