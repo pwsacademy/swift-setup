@@ -1,4 +1,4 @@
-# CentOS / Red Hat Enterprise Linux 8
+# CentOS 8<br>Red Hat Enterprise Linux 8
 
 [**CentOS**](https://centos.org) is derived from [**Red Hat Enterprise Linux (RHEL)**](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) but doesn’t require a license to run. The instructions below apply to both CentOS and RHEL 8.
 
