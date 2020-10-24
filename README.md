@@ -11,18 +11,18 @@ We only provide instructions for the latest release of each supported platform. 
 - [CentOS / Red Hat Enterprise Linux 8](platforms/centos/README.md)
 - [Fedora 32](platforms/fedora/README.md)
 - [macOS Catalina](platforms/macOS/README.md)
-- [Ubuntu LTS 20.04](platforms/ubuntu/README.md)
+- [Ubuntu / Pop!_OS LTS 20.04](platforms/ubuntu/README.md)
 
 ## Editors and IDEs
 
 - [Gedit](editors/gedit/README.md)
     * CentOS / Red Hat Enterprise Linux 8
     * Fedora 32
-    * Ubuntu LTS 20.04
+    * Ubuntu / Pop!_OS LTS 20.04
 - [Visual Studio Code](editors/vscode-linux/README.md)
     * CentOS / Red Hat Enterprise Linux 8
     * Fedora 32
-    * Ubuntu LTS 20.04
+    * Ubuntu / Pop!_OS LTS 20.04
 - [Xcode](editors/xcode/README.md)
     * macOS Catalina
 

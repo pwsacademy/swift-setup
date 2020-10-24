@@ -21,9 +21,13 @@ Out of the box, Visual Studio Code supports syntax highlighting and code formatt
 
 ## Installation
 
-On Ubuntu, download and install Visual Studio Code via the **Ubuntu Software** application:
+On Ubuntu, install Visual Studio Code via the **Ubuntu Software** application:
 
-![](download.png)
+![](install-ubuntu.png)
+
+On Pop!_OS, install it from the **Pop!_Shop**:
+
+![](install-pop.png)
 
 On Fedora and CentOS/RHEL, run the following commands in **Terminal** to install the Visual Studio Code repository:
 
@@ -58,7 +62,7 @@ The [**SourceKit-LSP**](https://github.com/apple/sourcekit-lsp) extension is sti
 First, install the software you need to build this source code. The command for this depends on your distribution:
 
 ```
-# On Ubuntu, run:
+# On Ubuntu and Pop!_OS, run:
 sudo apt install npm
 
 # On Fedora and CentOS/RHEL, run:
@@ -106,7 +110,7 @@ Next, you’ll configure this extension to use the version of LLDB that’s incl
 
 Enter the correct value for your distribution:
 
-* On Ubuntu, enter **/opt/swift/usr/lib/liblldb.so**. This assumes that you’ve installed Swift in **/opt/swift** according to the installation instructions for [Swift on Ubuntu](../../platforms/ubuntu/README.md).
+* On Ubuntu and Pop!_OS, enter **/opt/swift/usr/lib/liblldb.so**. This assumes that you’ve installed Swift in **/opt/swift** according to the installation instructions for [Swift on Ubuntu](../../platforms/ubuntu/README.md).
 * On Fedora and CentOS/RHEL, enter **/usr/libexec/swift/lib/liblldb.so**.
 
 ## Usage

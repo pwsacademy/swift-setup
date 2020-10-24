@@ -1,6 +1,8 @@
-# Ubuntu LTS 20.04
+# Ubuntu / Pop!_OS LTS 20.04
 
 [**Ubuntu**](https://ubuntu.com) was the first Linux distribution to support Swift. Unfortunately, Swift isn’t available as a native package yet, so you’ll have to download and install it manually.
+
+[**Pop!_OS**](https://pop.system76.com) is derived from Ubuntu, so the following instructions apply to Pop!_OS as well.
 
 First, open the **Terminal** application and run the following command to install the software Swift depends on:
 
@@ -77,5 +79,5 @@ swift --version
 
 ---
 
-Last updated: 21 Oct. 2020 \
+Last updated: 24 Oct. 2020 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
