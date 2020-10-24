@@ -20,6 +20,8 @@ We only provide instructions for the latest release of each supported platform. 
     * Fedora 32
     * Ubuntu LTS 20.04
 - [Visual Studio Code](editors/vscode-linux/README.md)
+    * CentOS / Red Hat Enterprise Linux 8
+    * Fedora 32
     * Ubuntu LTS 20.04
 - [Xcode](editors/xcode/README.md)
     * macOS Catalina

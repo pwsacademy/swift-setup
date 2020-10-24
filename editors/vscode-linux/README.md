@@ -21,9 +21,25 @@ Out of the box, Visual Studio Code supports syntax highlighting and code formatt
 
 ## Installation
 
-Download and install Visual Studio Code via the **Ubuntu Software** application:
+On Ubuntu, download and install Visual Studio Code via the **Ubuntu Software** application:
 
 ![](download.png)
+
+On Fedora and CentOS/RHEL, run the following commands in **Terminal** to install the Visual Studio Code repository:
+
+```
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+```
+
+> **Note**: These commands require administrator privileges, so they’ll ask for your password.
+
+Then update the package cache and install Visual Studio Code:
+
+```
+sudo dnf check-update
+sudo dnf install code
+```
 
 After installation, you can launch Visual Studio Code from the **Activities** screen:
 
@@ -39,13 +55,15 @@ code
 
 The [**SourceKit-LSP**](https://github.com/apple/sourcekit-lsp) extension is still in development, so you’ll have to install it from source code.
 
-First, make sure you have the software required to download and build this source code:
+First, install the software you need to build this source code. The command for this depends on your distribution:
 
 ```
-sudo apt install git npm
-```
+# On Ubuntu, run:
+sudo apt install npm
 
-> **Note**: This command requires administrator privileges, so it’ll ask for your password.
+# On Fedora and CentOS/RHEL, run:
+sudo dnf install npm
+```
 
 Next, download the source code:
 
@@ -61,7 +79,7 @@ cd sourcekit-lsp/Editors/vscode
 npm run createDevPackage
 ```
 
-This creates a file named **sourcekit-lsp-vscode-dev.vsix** in the **out** directory. Install this file as follows:
+This creates an extension named **sourcekit-lsp-vscode-dev.vsix** in the **out** directory. Install this extension as follows:
 
 ```
 code --install-extension out/sourcekit-lsp-vscode-dev.vsix
@@ -71,7 +89,7 @@ Finally, remove the downloaded source files:
 
 ```
 cd ~/Downloads
-rm -r sourcekit-lsp
+rm -rf sourcekit-lsp
 ```
 
 ### CodeLLDB
@@ -82,11 +100,14 @@ To install CodeLLDB, select **View ▸ Extensions** from the menu bar, search th
 
 ![](lldb-install.png)
 
-Next, you’ll configure this extension to use the version of LLDB that’s included with Swift. Select **File ▸ Preferences ▸ Settings** from the menu bar and search for the **Lldb: Library** setting. Enter a value of **/opt/swift/usr/lib/liblldb.so**:
+Next, you’ll configure this extension to use the version of LLDB that’s included with Swift. Select **File ▸ Preferences ▸ Settings** from the menu bar and search for the **Lldb: Library** setting:
 
 ![](lldb-config.png)
 
-> **Note**: This assumes that you’ve installed Swift in **/opt/swift** according to the installation instructions for [Swift on Ubuntu](../../platforms/ubuntu-2004/README.md).
+Enter the correct value for your distribution:
+
+* On Ubuntu, enter **/opt/swift/usr/lib/liblldb.so**. This assumes that you’ve installed Swift in **/opt/swift** according to the installation instructions for [Swift on Ubuntu](../../platforms/ubuntu/README.md).
+* On Fedora and CentOS/RHEL, enter **/usr/libexec/swift/lib/liblldb.so**.
 
 ## Usage
 
@@ -202,5 +223,5 @@ When you’re done debugging, use the **Stop** button on the floating toolbar or
 
 ---
 
-Last updated: 21 Oct. 2020 \
+Last updated: 24 Oct. 2020 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
