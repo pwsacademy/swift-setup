@@ -6,6 +6,7 @@ Our goal is to support the adoption of Swift as a general purpose cross-platform
 
 ## Platforms
 
+- [CentOS / Red Hat Enterprise Linux 8](platforms/centos/README.md)
 - [Fedora 32](platforms/fedora/README.md)
 - [macOS](platforms/macOS/README.md)
 - [Ubuntu 20.04](platforms/ubuntu-2004/README.md)
