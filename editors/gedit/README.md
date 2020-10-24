@@ -2,7 +2,7 @@
 
 ![](gedit.png)
 
-[**Gedit**](https://wiki.gnome.org/Apps/Gedit) is the default text editor on Linux distributions — such as Ubuntu — that use the [GNOME](http://www.gnome.org) desktop environment.
+[**Gedit**](https://wiki.gnome.org/Apps/Gedit) is the default text editor on Linux distributions that use the [GNOME](http://www.gnome.org) desktop environment.
 
 ## Features
 
@@ -51,5 +51,5 @@ When using Gedit, you’ll have to keep a terminal window open as well. Gedit ca
 
 ---
 
-Last updated: 21 Oct. 2020 \
+Last updated: 24 Oct. 2020 \
 Author: [Steven Van Impe](https://github.com/svanimpe)

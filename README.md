@@ -16,6 +16,8 @@ We only provide instructions for the latest release of each supported platform. 
 ## Editors and IDEs
 
 - [Gedit](editors/gedit/README.md)
+    * CentOS / Red Hat Enterprise Linux 8
+    * Fedora 32
     * Ubuntu LTS 20.04
 - [Visual Studio Code](editors/vscode-linux/README.md)
     * Ubuntu LTS 20.04
