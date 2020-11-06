@@ -57,44 +57,15 @@ code
 
 ### SourceKit-LSP
 
-The [**SourceKit-LSP**](https://github.com/apple/sourcekit-lsp) extension is still in development, so you’ll have to install it from source code.
+The **SourceKit-LSP** extension is still in development. For easy installation, you can download the latest version from our repository:
 
-First, install the software you need to build this source code. The command for this depends on your distribution:
+⬇️ [Download the SourceKit-LSP extension](../../downloads/sourcekit-lsp-vscode-dev.vsix)
 
-```
-# On Ubuntu and Pop!_OS, run:
-sudo apt install npm
+To install this extension, select **View ▸ Extensions** from the menu bar, click the triple dots, then select **Install from VSIX...**:
 
-# On Fedora and CentOS/RHEL, run:
-sudo dnf install npm
-```
+![](install-extension.png)
 
-Next, download the source code:
-
-```
-cd ~/Downloads
-git clone https://github.com/apple/sourcekit-lsp
-```
-
-Now build the extension:
-
-```
-cd sourcekit-lsp/Editors/vscode
-npm run createDevPackage
-```
-
-This creates an extension named **sourcekit-lsp-vscode-dev.vsix** in the **out** directory. Install this extension as follows:
-
-```
-code --install-extension out/sourcekit-lsp-vscode-dev.vsix
-```
-
-Finally, remove the downloaded source files:
-
-```
-cd ~/Downloads
-rm -rf sourcekit-lsp
-```
+Browse to the **sourcekit-lsp-vscode-dev.vsix** file you downloaded earlier, and install it.
 
 ### CodeLLDB
 
