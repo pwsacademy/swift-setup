@@ -22,28 +22,21 @@ During installation, select the latest versions of the following **individual co
 - Windows Universal C Runtime
 - Windows 10 SDK
 
-These are the only Visual Studio components you need for Swift development.
+These are the only Visual Studio components you need for Swift development. If Visual Studio prompts you about installing workloads, it’s safe to continue without adding any:
+
+![](visual-studio-workloads.png)
 
 ## Installation
 
-Next, download and install the latest [snapshot](https://swift.org/download/#snapshots) of Swift for Windows 10. You’ll see some security warnings during installation; this is normal.
+Next, download and install the latest [release](https://swift.org/download/#releases) of Swift for Windows 10. You’ll see some security warnings during installation; this is normal:
 
-After installing Swift, open the **Start** menu and find the **x64 Native Tools Command Prompt for VS 2019**. Right-click this application and select **Run as administrator**:
+![](security-warning.png)
 
-![](admin-prompt.png)
+Click **More info**, then **Run anyway** to run the installer:
 
-At this prompt, enter the following commands:
+![](security-warning-run.png)
 
-```
-copy %SDKROOT%\usr\share\ucrt.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVersion%\ucrt\module.modulemap"
-copy %SDKROOT%\usr\share\visualc.modulemap "%VCToolsInstallDir%\include\module.modulemap"
-copy %SDKROOT%\usr\share\visualc.apinotes "%VCToolsInstallDir%\include\visualc.apinotes"
-copy %SDKROOT%\usr\share\winsdk.modulemap "%UniversalCRTSdkDir%\Include\%UCRTVersion%\um\module.modulemap"
-```
-
-These commands copy files from the Swift installation over to Visual Studio. You’ll need to repeat these commands whenever you update Swift or Visual Studio.
-
-Finally, verify that you can run the following command:
+After installing Swift, use the **Start** menu to open either **Command Prompt** or **Windows PowerShell**, and verify that you can run the following command:
 
 ```
 swift --version
@@ -59,5 +52,5 @@ swift --version
 
 ---
 
-Last updated: 5 Nov. 2020 \
-Author: [Saleem Abdulrasool](https://github.com/compnerd)
+Last updated: 7 Oct. 2021 \
+Authors: [Saleem Abdulrasool](https://github.com/compnerd), [Steven Van Impe](https://github.com/svanimpe)

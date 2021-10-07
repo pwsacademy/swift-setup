@@ -63,7 +63,17 @@ code hello
 
 ![](open-package.png)
 
-> **Note**: The SourceKit-LSP extension will not work properly until you build your package. It also requires you to reload the package when you add or remove source files.
+Note that the SourceKit-LSP extension will not work properly until you build your package. It also requires you to reload the package when you add or remove source files.
+
+### Workspace trust settings
+
+Visual Studio Code may open your workspace in **restricted mode**, which will disable the SourceKit-LSP extension:
+
+![](restricted-mode-banner.png)
+
+If you’re seeing this banner, click **Manage**, then **Trust** to enable all features and extensions:
+
+![](workspace-trust-settings.png)
 
 ### Integrated terminal
 
@@ -110,5 +120,5 @@ You can now select **Terminal ▸ Run Build Task...** from the menu bar or press
 
 ---
 
-Last updated: 5 Nov. 2020 \
+Last updated: 7 Oct. 2021 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
