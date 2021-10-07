@@ -35,13 +35,13 @@ code
 
 The **SourceKit-LSP** extension is still in development. For easy installation, you can download the latest version from our repository:
 
-⬇️ [Download the SourceKit-LSP extension](../../downloads/sourcekit-lsp-vscode-dev.vsix)
+⬇️ [Download the SourceKit-LSP extension](../../downloads/sourcekit-lsp-development.vsix)
 
 To install this extension, select **View ▸ Extensions** from the menu bar, click the triple dots, then select **Install from VSIX...**:
 
 ![](install-extension.png)
 
-Browse to the **sourcekit-lsp-vscode-dev.vsix** file you downloaded earlier, and install it.
+Browse to the **sourcekit-lsp-development.vsix** file you downloaded earlier, and install it.
 
 ## Usage
 
