@@ -21,9 +21,9 @@ Out of the box, Visual Studio Code supports syntax highlighting and code formatt
 
 ## Installation
 
-Download and install Visual Studio Code from [code.visualstudio.com](https://code.visualstudio.com):
+Download and install Visual Studio Code from [code.visualstudio.com](https://code.visualstudio.com) or from the Microsoft Store:
 
-![](download.png)
+![](store.png)
 
 After installation, you can launch Visual Studio Code from the **Start** menu. You can also launch it from the command line, using the **`code`** command:
 
@@ -120,5 +120,5 @@ You can now select **Terminal ▸ Run Build Task...** from the menu bar or press
 
 ---
 
-Last updated: 7 Oct. 2021 \
+Last updated: 23 Oct. 2021 \
 Author: [Steven Van Impe](https://github.com/svanimpe)

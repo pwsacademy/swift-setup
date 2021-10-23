@@ -14,13 +14,7 @@ With that in mind, please adhere to the following guidelines when contributing i
 
 ## Platforms
 
-* To be included in this repository, a platform must support the following features:
-    - Start a REPL by running the `swift` command with no arguments.
-    - Run a source file with the `swift` command.
-    - Compile one or more files with the `swiftc` command.
-    - Create, build, run, and test packages with the Swift Package Manager.
-* Additionally, the platform must have a recent, stable, binary release. Don’t rely on daily builds or building from source code.
-* You may submit platforms that don’t meet these requirements, but such platforms must be marked with **[Experimental]** and your instructions should clarify which features are unsupported.
+* To be included in this repository, a platform must have a recent, stable, binary release. Don’t rely on daily builds or building from source code.
 * Base your instructions on a fresh install of the platform and provide installation instructions for required software that is not included with the platform.
 * End your instructions by running `swift --version` to verify that `swift` is installed and available on the `PATH`.
 

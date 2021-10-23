@@ -14,9 +14,8 @@ We only provide instructions for the latest release of each supported platform. 
 - [Pop!_OS 20.04 LTS](platforms/ubuntu/README.md)
 - [Red Hat Enterprise Linux 8](platforms/centos/README.md)
 - [Ubuntu 20.04 LTS](platforms/ubuntu/README.md)
-- [Windows 10](platforms/windows/README.md) [Experimental]
-
-Platforms marked as **[Experimental]** aren’t fully supported yet and may require some workarounds.
+- [Windows 10](platforms/windows/README.md)
+- [Windows 11](platforms/windows/README.md)
 
 ## Editors and IDEs
 
@@ -27,7 +26,7 @@ Platforms marked as **[Experimental]** aren’t fully supported yet and may requ
     * Red Hat Enterprise Linux 8
     * Ubuntu 20.04 LTS
 - [Notepad++](editors/notepadplusplus/README.md)
-    * Windows 10
+    * Windows 10 / 11
 - [Visual Studio Code (Linux)](editors/vscode-linux/README.md)
     * CentOS 8
     * Fedora 32
@@ -35,7 +34,7 @@ Platforms marked as **[Experimental]** aren’t fully supported yet and may requ
     * Red Hat Enterprise Linux 8
     * Ubuntu 20.04 LTS
 - [Visual Studio Code (Windows)](editors/vscode-windows/README.md)
-    * Windows 10
+    * Windows 10 / 11
 - [Xcode](editors/xcode/README.md)
     * macOS Catalina
 
