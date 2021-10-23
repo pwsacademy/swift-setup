@@ -10,7 +10,7 @@ We only provide instructions for the latest release of each supported platform. 
 
 - [CentOS 8](platforms/centos/README.md)
 - [Fedora 34](platforms/fedora/README.md)
-- [macOS Catalina](platforms/macOS/README.md)
+- [macOS Big Sur](platforms/macOS/README.md)
 - [Pop!_OS 21.10](platforms/ubuntu/README.md)
 - [Red Hat Enterprise Linux 8](platforms/centos/README.md)
 - [Ubuntu 21.10](platforms/ubuntu/README.md)
@@ -35,7 +35,7 @@ We only provide instructions for the latest release of each supported platform. 
 - [Visual Studio Code (Windows)](editors/vscode-windows/README.md)
     * Windows 10 / 11
 - [Xcode](editors/xcode/README.md)
-    * macOS Catalina
+    * macOS Big Sur
 
 ## Contributing
 

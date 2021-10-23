@@ -1,4 +1,4 @@
-# macOS Catalina
+# macOS Big Sur
 
 On macOS, Swift comes bundled with [**Xcode**](../../editors/xcode/README.md), which is Apple’s integrated development environment (IDE). Xcode includes everything you need to create Swift applications for Apple platforms.
 
@@ -30,9 +30,9 @@ Finally, run the command below to see what version of Swift is on your system:
 swift --version
 ```
 
-The current version of Xcode (12) includes Swift 5.3.
+The current version of Xcode (13) includes Swift 5.5.
 
 ---
 
-Last updated: 21 Oct. 2020 \
+Last updated: 23 Oct. 2021 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
