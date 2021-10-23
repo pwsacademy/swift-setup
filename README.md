@@ -9,7 +9,7 @@ Our goal is to support the adoption of Swift as a general purpose cross-platform
 We only provide instructions for the latest release of each supported platform. These instructions *may* also apply to older releases:
 
 - [CentOS 8](platforms/centos/README.md)
-- [Fedora 32](platforms/fedora/README.md)
+- [Fedora 34](platforms/fedora/README.md)
 - [macOS Catalina](platforms/macOS/README.md)
 - [Pop!_OS 21.10](platforms/ubuntu/README.md)
 - [Red Hat Enterprise Linux 8](platforms/centos/README.md)
@@ -20,7 +20,7 @@ We only provide instructions for the latest release of each supported platform. 
 
 - [Gedit](editors/gedit/README.md)
     * CentOS 8
-    * Fedora 32
+    * Fedora 34
     * Pop!_OS 21.10
     * Red Hat Enterprise Linux 8
     * Ubuntu 21.10
@@ -28,7 +28,7 @@ We only provide instructions for the latest release of each supported platform. 
     * Windows 10 / 11
 - [Visual Studio Code (Linux)](editors/vscode-linux/README.md)
     * CentOS 8
-    * Fedora 32
+    * Fedora 34
     * Pop!_OS 21.10
     * Red Hat Enterprise Linux 8
     * Ubuntu 21.10

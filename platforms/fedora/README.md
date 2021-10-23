@@ -1,4 +1,4 @@
-# Fedora 32
+# Fedora 34
 
 [**Fedora**](https://getfedora.org) isn’t officially supported yet, but it has excellent support for Swift and even provides a native package for easy installation.
 
@@ -16,7 +16,11 @@ You can now execute the `swift` command to verify which version you have install
 swift --version
 ```
 
+## Known issues
+
+- The REPL doesn’t show certain characters and can behave erratically ([#13029](https://bugs.swift.org/browse/SR-13029), [#13885](https://bugs.swift.org/browse/SR-13885?filter=10506)).
+
 ---
 
-Last updated: 24 Oct. 2020 \
-Author: [Ron Olson](https://github.com/tachoknight)
+Last updated: 23 Oct. 2021 \
+Authors: [Ron Olson](https://github.com/tachoknight), [Steven Van Impe](https://github.com/svanimpe)
