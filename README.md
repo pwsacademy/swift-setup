@@ -14,8 +14,7 @@ We only provide instructions for the latest release of each supported platform. 
 - [Pop!_OS 21.10](platforms/ubuntu/README.md)
 - [Red Hat Enterprise Linux 8](platforms/centos/README.md)
 - [Ubuntu 21.10](platforms/ubuntu/README.md)
-- [Windows 10](platforms/windows/README.md)
-- [Windows 11](platforms/windows/README.md)
+- [Windows 10 / 11](platforms/windows/README.md)
 
 ## Editors and IDEs
 
