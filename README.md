@@ -11,9 +11,9 @@ We only provide instructions for the latest release of each supported platform. 
 - [CentOS 8](platforms/centos/README.md)
 - [Fedora 32](platforms/fedora/README.md)
 - [macOS Catalina](platforms/macOS/README.md)
-- [Pop!_OS 20.04 LTS](platforms/ubuntu/README.md)
+- [Pop!_OS 21.10](platforms/ubuntu/README.md)
 - [Red Hat Enterprise Linux 8](platforms/centos/README.md)
-- [Ubuntu 20.04 LTS](platforms/ubuntu/README.md)
+- [Ubuntu 21.10](platforms/ubuntu/README.md)
 - [Windows 10](platforms/windows/README.md)
 - [Windows 11](platforms/windows/README.md)
 
@@ -22,17 +22,17 @@ We only provide instructions for the latest release of each supported platform. 
 - [Gedit](editors/gedit/README.md)
     * CentOS 8
     * Fedora 32
-    * Pop!_OS 20.04 LTS
+    * Pop!_OS 21.10
     * Red Hat Enterprise Linux 8
-    * Ubuntu 20.04 LTS
+    * Ubuntu 21.10
 - [Notepad++](editors/notepadplusplus/README.md)
     * Windows 10 / 11
 - [Visual Studio Code (Linux)](editors/vscode-linux/README.md)
     * CentOS 8
     * Fedora 32
-    * Pop!_OS 20.04 LTS
+    * Pop!_OS 21.10
     * Red Hat Enterprise Linux 8
-    * Ubuntu 20.04 LTS
+    * Ubuntu 21.10
 - [Visual Studio Code (Windows)](editors/vscode-windows/README.md)
     * Windows 10 / 11
 - [Xcode](editors/xcode/README.md)

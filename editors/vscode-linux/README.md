@@ -25,7 +25,7 @@ On Ubuntu, install Visual Studio Code via the **Ubuntu Software** application:
 
 ![](install-ubuntu.png)
 
-On Pop!_OS, install it from the **Pop!_Shop**:
+On Pop!_OS, install the **deb** version from the **Pop!_Shop**:
 
 ![](install-pop.png)
 
@@ -81,8 +81,10 @@ Next, you’ll configure this extension to use the version of LLDB that’s incl
 
 Enter the correct value for your distribution:
 
-* On Ubuntu and Pop!_OS, enter **/opt/swift/usr/lib/liblldb.so**. This assumes that you’ve installed Swift in **/opt/swift** according to the installation instructions for [Swift on Ubuntu](../../platforms/ubuntu/README.md).
+* On Ubuntu and Pop!_OS, enter **/usr/lib/liblldb.so**.
 * On Fedora and CentOS/RHEL, enter **/usr/libexec/swift/lib/liblldb.so**.
+
+This assumes that you’ve installed Swift according to our installation instructions for your distribution.
 
 ## Usage
 
@@ -104,7 +106,15 @@ code hello
 
 ![](open-package.png)
 
-> **Note**: The SourceKit-LSP extension will not work properly until you build your package. It also requires you to reload the package when you add or remove source files.
+Note that the SourceKit-LSP extension will not work properly until you build your package. It also requires you to reload the package when you add or remove source files.
+
+### Workspace trust
+
+Visual Studio Code may show a trust prompt when opening a file or folder:
+
+![](workspace-trust.png)
+
+Make sure to select **Yes**, otherwise Visual Studio Code will disable the SourceKit-LSP extension.
 
 ### Integrated terminal
 
@@ -180,7 +190,7 @@ This adds a **tasks.json** file to the **.vscode** directory. Change the content
 
 You can now use the CodeLLDB extension to run and debug your program.
 
-> **Note**: You’ll have to repeat the previous steps when you create a new package. Fortunately, you can just copy the **.vscode** directory to your new package and change the name of your program in **launch.json**.
+> **Note**: You’ll have to repeat the previous steps every time you create a new package. Fortunately, you can just copy the **.vscode** directory to your new package and change the name of your program in **launch.json**.
 
 To run your program with CodeLLDB, select **Run ▸ Run Without Debugging** from the menu bar or press **Ctrl+F5**.
 
@@ -198,5 +208,5 @@ When you’re done debugging, use the **Stop** button on the floating toolbar or
 
 ---
 
-Last updated: 24 Oct. 2020 \
+Last updated: 23 Oct. 2021 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
