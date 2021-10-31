@@ -84,9 +84,13 @@ swift --version
 - Running source files with `swift` is currently unavailable on Windows ([#13805](https://bugs.swift.org/browse/SR-13805)).
 - When using **`swiftc`**, you have to add either `-sdk $env:sdkroot` (in **PowerShell**) or `-sdk %sdkroot%` (in **Command Prompt**) to your command.
 - Executables ran using `swift run` behave incorrectly ([#13806](https://bugs.swift.org/browse/SR-13806)). As a workaround, use `swift build` to build the package, then run the executable manually.
-- Unicode output may not display properly on the command line ([#13807](https://bugs.swift.org/browse/SR-13807)). For the best results, use [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) and execute `chcp 65001` prior to running a Swift application that outputs Unicode.
+- Unicode output may not display properly on the command line ([#13807](https://bugs.swift.org/browse/SR-13807)). As a workaround, add the following lines of code to your application:
+  ```swift
+  import WinSDK
+  _ = SetConsoleOutputCP(UINT(CP_UTF8))
+  ```
 
 ---
 
-Last updated: 23 Oct. 2021 \
+Last updated: 31 Oct. 2021 \
 Authors: [Saleem Abdulrasool](https://github.com/compnerd), [Steven Van Impe](https://github.com/svanimpe)
