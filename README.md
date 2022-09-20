@@ -10,29 +10,23 @@ If you’re interested in learning Swift, please see our [Programming with Swift
 
 We only provide instructions for the latest release of each supported platform. These instructions *may* also apply to older releases:
 
-- [CentOS 8](platforms/centos/README.md)
 - [Fedora 34](platforms/fedora/README.md)
 - [macOS Big Sur](platforms/macOS/README.md)
 - [Pop!_OS 21.10](platforms/ubuntu/README.md)
-- [Red Hat Enterprise Linux 8](platforms/centos/README.md)
 - [Ubuntu 21.10](platforms/ubuntu/README.md)
 - [Windows 10 / 11](platforms/windows/README.md)
 
 ## Editors and IDEs
 
 - [Gedit](editors/gedit/README.md)
-    * CentOS 8
     * Fedora 34
     * Pop!_OS 21.10
-    * Red Hat Enterprise Linux 8
     * Ubuntu 21.10
 - [Notepad++](editors/notepadplusplus/README.md)
     * Windows 10 / 11
 - [Visual Studio Code (Linux)](editors/vscode-linux/README.md)
-    * CentOS 8
     * Fedora 34
     * Pop!_OS 21.10
-    * Red Hat Enterprise Linux 8
     * Ubuntu 21.10
 - [Visual Studio Code (Windows)](editors/vscode-windows/README.md)
     * Windows 10 / 11

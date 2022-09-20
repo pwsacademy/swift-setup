@@ -29,7 +29,7 @@ On Pop!_OS, install the **deb** version from the **Pop!_Shop**:
 
 ![](install-pop.png)
 
-On Fedora and CentOS/RHEL, run the following commands in **Terminal** to install the Visual Studio Code repository:
+On Fedora, run the following commands in **Terminal** to install the Visual Studio Code repository:
 
 ```
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -82,7 +82,7 @@ Next, you’ll configure this extension to use the version of LLDB that’s incl
 Enter the correct value for your distribution:
 
 * On Ubuntu and Pop!_OS, enter **/usr/lib/liblldb.so**.
-* On Fedora and CentOS/RHEL, enter **/usr/libexec/swift/lib/liblldb.so**.
+* On Fedora, enter **/usr/libexec/swift/lib/liblldb.so**.
 
 This assumes that you’ve installed Swift according to our installation instructions for your distribution.
 
@@ -208,5 +208,5 @@ When you’re done debugging, use the **Stop** button on the floating toolbar or
 
 ---
 
-Last updated: 23 Oct. 2021 \
+Last updated: 20 Sept. 2022 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
