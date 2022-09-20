@@ -1,8 +1,10 @@
-# Ubuntu 21.10<br>Pop!_OS 21.10
+# Ubuntu 22.04 LTS
 
-[**Ubuntu**](https://ubuntu.com) was the first Linux distribution to support Swift. [**Pop!_OS**](https://pop.system76.com) is derived from Ubuntu, so the following instructions apply to Pop!_OS as well.
+[**Ubuntu**](https://ubuntu.com) was the first Linux distribution to support Swift. Together with [Visual Studio Code](../../editors/vscode-linux/README.md), it makes an excellent development platform for students using Linux.
 
-Open the **Terminal** application and run the following commands:
+These instructions use packages from the [**Swift Community APT Repository**](https://www.swiftlang.xyz) and may also apply to other releases of Ubuntu, as well as distributions derived from it.
+
+Open the **Terminal** application and run the following commands to install the Swift Community APT Repository:
 
 ```
 sudo apt install -y curl
@@ -23,11 +25,7 @@ Finally, verify that you can run the following command:
 swift --version
 ```
 
-## Known issues
-
-- The REPL doesn’t show certain characters and can behave erratically ([#13029](https://bugs.swift.org/browse/SR-13029), [#13885](https://bugs.swift.org/browse/SR-13885)).
-
 ---
 
-Last updated: 23 Oct. 2021 \
+Last updated: 20 Sept. 2022 \
 Author: [Steven Van Impe](https://github.com/svanimpe)

@@ -12,22 +12,19 @@ We only provide instructions for the latest release of each supported platform. 
 
 - [Fedora 34](platforms/fedora/README.md)
 - [macOS Big Sur](platforms/macOS/README.md)
-- [Pop!_OS 21.10](platforms/ubuntu/README.md)
-- [Ubuntu 21.10](platforms/ubuntu/README.md)
+- [Ubuntu 22.04 LTS](platforms/ubuntu/README.md)
 - [Windows 10 / 11](platforms/windows/README.md)
 
 ## Editors and IDEs
 
 - [Gedit](editors/gedit/README.md)
     * Fedora 34
-    * Pop!_OS 21.10
-    * Ubuntu 21.10
+    * Ubuntu 22.04
 - [Notepad++](editors/notepadplusplus/README.md)
     * Windows 10 / 11
 - [Visual Studio Code (Linux)](editors/vscode-linux/README.md)
     * Fedora 34
-    * Pop!_OS 21.10
-    * Ubuntu 21.10
+    * Ubuntu 22.04
 - [Visual Studio Code (Windows)](editors/vscode-windows/README.md)
     * Windows 10 / 11
 - [Xcode](editors/xcode/README.md)
