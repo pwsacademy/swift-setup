@@ -87,5 +87,5 @@ To run your test targets, select **Product ▸ Test** from the menu bar, then se
 
 ---
 
-Last updated: 21 Oct. 2020 \
+Last updated: 22 Sept. 2022 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
