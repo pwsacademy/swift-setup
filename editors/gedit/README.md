@@ -51,5 +51,5 @@ When using Gedit, you’ll have to keep a terminal window open as well. Gedit ca
 
 ---
 
-Last updated: 24 Oct. 2020 \
+Last updated: 21 Sept. 2022 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
