@@ -10,7 +10,7 @@ If you’re interested in learning Swift, please see our [Programming with Swift
 
 We only provide instructions for the latest release of each supported platform. These instructions *may* also apply to older releases:
 
-- [Fedora 34](platforms/fedora/README.md)
+- [Fedora 36](platforms/fedora/README.md)
 - [macOS Monterey](platforms/macOS/README.md)
 - [Ubuntu 22.04 LTS](platforms/ubuntu/README.md)
 - [Windows 10 / 11](platforms/windows/README.md)
@@ -18,12 +18,12 @@ We only provide instructions for the latest release of each supported platform. 
 ## Editors and IDEs
 
 - [Gedit](editors/gedit/README.md)
-    * Fedora 34
+    * Fedora 36
     * Ubuntu 22.04
 - [Notepad++](editors/notepadplusplus/README.md)
     * Windows 10 / 11
 - [Visual Studio Code (Linux)](editors/vscode-linux/README.md)
-    * Fedora 34
+    * Fedora 36
     * Ubuntu 22.04
 - [Visual Studio Code (Windows)](editors/vscode-windows/README.md)
     * Windows 10 / 11

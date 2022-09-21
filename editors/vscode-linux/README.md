@@ -25,20 +25,19 @@ On Ubuntu, install Visual Studio Code via the **Ubuntu Software** application:
 
 ![](install-ubuntu.png)
 
-On Fedora, run the following commands in **Terminal** to install the Visual Studio Code repository:
+On Fedora, install Visual Studio Code from the [**Snap Store**](https://snapcraft.io). First, run the following commands in **Terminal** to install Snap:
 
 ```
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+sudo dnf install snapd
+sudo ln -s /var/lib/snapd/snap /snap
 ```
 
 > **Note**: These commands require administrator privileges, so they’ll ask for your password.
 
-Then update the package cache and install Visual Studio Code:
+Next, log out or restart your system. After logging back in, install Visual Studio Code with the following command:
 
 ```
-sudo dnf check-update
-sudo dnf install code
+sudo snap install --classic code
 ```
 
 After installation, you can launch Visual Studio Code from the **Activities** screen:
