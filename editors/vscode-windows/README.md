@@ -6,18 +6,18 @@
 
 ## Features
 
-Out of the box, Visual Studio Code supports syntax highlighting and code formatting for Swift. However, you can greatly extend its functionality by installing the [**SourceKit-LSP**](https://github.com/apple/sourcekit-lsp) extension. The result is a very capable editor:
+Out of the box, Visual Studio Code supports syntax highlighting and code formatting for Swift. However, you can greatly extend its functionality by installing the [**Swift extension**](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang). The result is a very capable editor:
 
 ✅ Syntax highlighting \
 ✅ Formatting \
-✅ Completion (SourceKit-LSP) \
-✅ Quick help (SourceKit-LSP) \
-✅ Diagnostics (SourceKit-LSP) \
-✅ Fix-its (SourceKit-LSP) \
+✅ Completion \
+✅ Quick help \
+✅ Diagnostics \
+✅ Fix-its \
 ❌ Refactoring \
 ✅ Run executables \
-❌ Debugging \
-❌ Testing
+✅ Debugging \
+✅ Testing
 
 ## Installation
 
@@ -31,31 +31,33 @@ After installation, you can launch Visual Studio Code from the **Start** menu. Y
 code
 ```
 
-### SourceKit-LSP
+### Swift extension
 
-The **SourceKit-LSP** extension is still in development. For easy installation, you can download the latest version from our repository:
-
-⬇️ [Download the SourceKit-LSP extension](../../downloads/sourcekit-lsp-development.vsix)
-
-To install this extension, select **View ▸ Extensions** from the menu bar, click the triple dots, then select **Install from VSIX...**:
+To install the Swift extension, select **View ▸ Extensions** from the menu bar, search “swift”, and install the extension published by the Swift Server Work Group:
 
 ![](install-extension.png)
 
-Browse to the **sourcekit-lsp-development.vsix** file you downloaded earlier, and install it.
+The Swift extension includes the [**CodeLLDB extension**](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb), on which it depends to run and debug programs using **LLDB**.
+
+After installation, the extension will prompt you to configure a Swift-specific version of LLDB:
+
+![](lldb.png)
+
+Select **Global** unless you intend to configure a custom version of LLDB.
 
 ## Usage
 
 To edit files with Visual Studio Code, select **File ▸ Open File...** from the menu bar or specify the files you want to open as arguments for the `code` command:
 
 ```
-code main.swift
+code hello.swift
 ```
 
 ![](open-file.png)
 
 If you specify a file that doesn’t exist, Visual Studio Code will create it for you. Alternatively, you can create files by selecting **File ▸ New File** from the menu bar.
 
-To edit a Swift package, select **File ▸ Open Folder...** and open the directory that contains the **Package.swift** file. On the command line, you specify this directory as an argument for the `code` command:
+To edit a Swift package, select **File ▸ Open Folder...** from the menu bar and open the directory that contains the **Package.swift** file. On the command line, you specify this directory as an argument for the `code` command:
 
 ```
 code hello
@@ -63,62 +65,43 @@ code hello
 
 ![](open-package.png)
 
-Note that the SourceKit-LSP extension will not work properly until you build your package. It also requires you to reload the package when you add or remove source files.
+To run your code, select **Run ▸ Run Without Debugging** from the menu bar or press **Ctrl+F5**.
 
-### Workspace trust settings
+Unfortunately, Visual Studio Code will open an external terminal and you won’t see the output of your program. Therefore, you may want to run your program from the integrated terminal instead:
 
-Visual Studio Code may open your workspace in **restricted mode**, which will disable the SourceKit-LSP extension:
+![](run-package.png)
 
-![](restricted-mode-banner.png)
+If the terminal is hidden, select **View ▸ Terminal** from the menu bar to show it.
 
-If you’re seeing this banner, click **Manage**, then **Trust** to enable all features and extensions:
+If your package contains multiple executable targets, select **View ▸ Run** from the menu bar to open the **Run and Debug** view. There, you can select a target to run:
 
-![](workspace-trust-settings.png)
+![](run-debug.png)
 
-### Integrated terminal
+### Debugging
 
-Visual Studio Code includes an integrated terminal that you can use to build and run your code. To open this terminal, select **View ▸ Terminal** from the menu bar:
+To debug a program, first set a breakpoint by clicking next to the line of code where you want the debugger to pause execution:
 
-![](terminal.png)
+![](breakpoint.png)
 
-### Creating a build task
+Next, select **Run ▸ Start Debugging** from the menu bar or press **F5** to start the debugger:
 
-You can create a build task to make your package easier to run. Select **Terminal ▸ Run Build Task...** from the menu bar, then select **Configure Build Task...**:
+![](debugging.png)
 
-![](task1.png)
+Use the debug console and the floating toolbar to interact with the program.
 
-Next, select **Create tasks.json file from template**:
+When you’re done debugging, use the **Stop** button on the floating toolbar or press **Shift+F5** to stop the debugger.
 
-![](task2.png)
+## Testing
 
-Then select **Others**:
+To run unit tests, select **View ▸ Testing** from the menu bar to open the **Test Explorer**. There, you can either run all tests, or run a specific target, class, or test:
 
-![](task3.png)
+![](testing.png)
 
-This adds a **tasks.json** file to the **.vscode** directory in your package. Change the contents of this file to the following:
+If the Test Explorer shows a test discovery error, select **Terminal ▸ Run Build Task...** from the menu bar and run the **swift: Build All** task to build the test targets.
 
-```json
-{
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "swift build",
-            "type": "shell",
-            "command": "swift build; if ($?) { .build\\debug\\<program>.exe }",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }
-    ]
-}
-```
-
-Replace `<program>` with the name of your executable target. You can find this name in **Package.swift**. Most likely, it’s also the name of your package.
-
-You can now select **Terminal ▸ Run Build Task...** from the menu bar or press **Ctrl+Shift+B** to run this task. The task will first run `swift build` to compile your package and, if that succeeds, run your executable. You’ll find its output in the integrated terminal.
+Test results will appear in the integrated terminal, in the Test Explorer, and in the editor.
 
 ---
 
-Last updated: 23 Oct. 2021 \
+Last updated: 23 Sept. 2022 \
 Author: [Steven Van Impe](https://github.com/svanimpe)

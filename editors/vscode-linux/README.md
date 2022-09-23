@@ -58,7 +58,7 @@ To install the Swift extension, select **View ▸ Extensions** from the menu bar
 
 The Swift extension includes the [**CodeLLDB extension**](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb), on which it depends to run and debug programs using **LLDB**.
 
-During installation, the extension will prompt you to configure a Swift-specific version of LLDB:
+After installation, the extension will prompt you to configure a Swift-specific version of LLDB:
 
 ![](lldb.png)
 
@@ -120,11 +120,11 @@ To run unit tests, select **View ▸ Testing** from the menu bar to open the **T
 
 ![](testing.png)
 
-Test results will appear in the integrated terminal, as well as in the Test Explorer.
-
 If the Test Explorer shows a test discovery error, select **Terminal ▸ Run Build Task...** from the menu bar and run the **swift: Build All** task to build the test targets.
+
+Test results will appear in the integrated terminal, in the Test Explorer, and in the editor.
 
 ---
 
-Last updated: 21 Sept. 2022 \
+Last updated: 23 Sept. 2022 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
