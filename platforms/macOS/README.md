@@ -1,4 +1,4 @@
-# macOS Monterey
+# macOS Ventura
 
 On macOS, Swift comes bundled with [**Xcode**](../../editors/xcode/README.md), which is Apple’s integrated development environment (IDE). Xcode includes everything you need to create Swift applications for Apple platforms.
 
@@ -34,5 +34,5 @@ The current version of Xcode (14) includes Swift 5.7.
 
 ---
 
-Last updated: 22 Sept. 2022 \
+Last updated: 5 Jan. 2023 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
