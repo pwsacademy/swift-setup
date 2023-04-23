@@ -72,6 +72,22 @@ After installing Swift, open **Command Prompt** and verify that you can run the 
 swift --version
 ```
 
+## Repairing after an upgrade
+
+In the future, if you upgrade either Swift, Visual Studio, or Windows itself, you may encounter errors that prevent you from compiling your code. To fix these errors, repair your installation as follows:
+
+First, open the **Add or remove programs** control panel:
+
+![](repair1.png)
+
+There, search for **Swift**, click the triple dots, and select **Modify**:
+
+![](repair2.png)
+
+This will open the Swift installer, where you can select **Repair** to fix your installation:
+
+![](repair3.png)
+
 ## Known issues
 
 - The REPL is currently unavailable on Windows ([#13804](https://bugs.swift.org/browse/SR-13804)).
@@ -80,5 +96,5 @@ swift --version
 
 ---
 
-Last updated: 5 Jan. 2023 \
+Last updated: 23 Apr. 2023 \
 Authors: [Saleem Abdulrasool](https://github.com/compnerd), [Steven Van Impe](https://github.com/svanimpe)
