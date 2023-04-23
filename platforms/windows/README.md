@@ -52,7 +52,7 @@ Next, return to **Command Prompt** and check which version of Swift is available
 winget show Swift.Toolchain
 ```
 
-If this is the latest version (currently 5.7.2), install it as follows:
+If this is the latest version (currently 5.8), install it as follows:
 
 ```
 winget install Swift.Toolchain
