@@ -22,71 +22,43 @@ This will make sure you have the Windows Package Manager (**winget**) installed.
 
 ## Dependencies
 
-Open **Command Prompt** and install Git and Python with the following commands:
+Open **Command Prompt** or **Windows Terminal** and install Git and Python with the following commands:
 
 ```
 winget install Git.Git
-winget install Python.Python.3.10
+winget install Python.Python.3.9
+```
+
+Now restart your terminal and run the following commands: 
+
+```
 python -m ensurepip
 python -m pip install six
 ```
 
-Next, download and install [**Visual Studio 2022**](https://visualstudio.microsoft.com), which is Microsoft’s IDE for development on Windows. Although you won’t use Visual Studio to develop Swift applications, you’ll need some of the libraries that come with it.
+These commands will install the Python package installer (**pip**) and compatibility library (**six**), or report that you already have them installed.
 
-If you don’t already have Visual Studio, install the free community edition:
+Next, install some required components from [**Visual Studio 2022**](https://visualstudio.microsoft.com), which is Microsoft’s IDE for development on Windows. Although you won’t use Visual Studio to develop Swift applications, you’ll need some of the tools and libraries that come with it.
 
-![](visual-studio.png)
-
-During installation, select the following **individual components**:
-
-- Windows 10 SDK (10.0.19041.0)
-- MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
-
-These are the only Visual Studio components you need for Swift development. If Visual Studio prompts you about installing workloads, it’s safe to continue without adding any:
-
-![](visual-studio-workloads.png)
-
-Next, return to **Command Prompt** and check which version of Swift is available from **winget**:
+Run the following command (all on one line):
 
 ```
-winget show Swift.Toolchain
+winget install Microsoft.VisualStudio.2022.Community --force --custom "--add Microsoft.VisualStudio.Component.Windows11SDK.22000 --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64"
 ```
 
-If this is the latest version (currently 5.8), install it as follows:
+## Swift
+
+With these dependencies in place, you can now install Swift with the following command:
 
 ```
 winget install Swift.Toolchain
 ```
 
-Otherwise, download and install the latest release from [swift.org](https://swift.org/download/#releases).
-
-You’ll see some security warnings during installation; this is normal:
-
-![](security-warning.png)
-
-Click **More info**, then **Run anyway** to run the installer.
-
-After installing Swift, open **Command Prompt** and verify that you can run the following command:
+Restart your terminal one last time, then verify that you can run the following command:
 
 ```
 swift --version
 ```
-
-## Repairing after an upgrade
-
-In the future, if you upgrade either Swift, Visual Studio, or Windows itself, you may encounter errors that prevent you from compiling your code. To fix these errors, repair your installation as follows:
-
-First, open the **Add or remove programs** control panel:
-
-![](repair1.png)
-
-There, search for **Swift**, click the triple dots, and select **Modify**:
-
-![](repair2.png)
-
-This will open the Swift installer, where you can select **Repair** to fix your installation:
-
-![](repair3.png)
 
 ## Known issues
 
@@ -96,5 +68,5 @@ This will open the Swift installer, where you can select **Repair** to fix your 
 
 ---
 
-Last updated: 23 Apr. 2023 \
+Last updated: 6 Oct. 2023 \
 Authors: [Saleem Abdulrasool](https://github.com/compnerd), [Steven Van Impe](https://github.com/svanimpe)
