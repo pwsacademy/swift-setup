@@ -4,7 +4,7 @@ This repository describes how you can set up a development environment for the [
 
 Our goal is to support the adoption of Swift as a general purpose cross-platform programming language in education. To that end, we provide student-friendly instructions for various platforms, editors, and IDEs that support Swift.
 
-If you’re interested in learning Swift, please see our [Programming with Swift: Fundamentals](https://www.pwsacademy.org) course, for which this repository is a supporting resource.
+If you’re interested in learning Swift, please see our [Programming with Swift: Fundamentals](https://www.pwsacademy.org/courses/pws-fundamentals.html) course, for which this repository is a supporting resource.
 
 ## Platforms
 
