@@ -14,7 +14,7 @@ On Windows 11, you can find this setting under **Settings ▸ Privacy & security
 
 ![](developer-mode-11.png)
 
-Next, install or update **App Installer** from the Microsoft Store:
+Next, install or update **[App Installer](https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-US&gl=BE)** from the Microsoft Store:
 
 ![](app-installer.png)
 
