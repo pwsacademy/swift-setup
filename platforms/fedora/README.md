@@ -1,8 +1,8 @@
-# Fedora 36
+# Fedora 40
 
-[**Fedora**](https://getfedora.org) isn’t officially supported yet, but it has excellent support for Swift and even provides a native package for easy installation.
+[**Fedora**](https://www.fedoraproject.org) has excellent support for Swift and even provides a native package for easy installation.
 
-To install Swift on Fedora, open the **Terminal** program and run the following command:
+To install Swift on Fedora, open the **Terminal** application and run the following command:
 
 ```
 sudo dnf install -y swift-lang
@@ -18,5 +18,5 @@ swift --version
 
 ---
 
-Last updated: 21 Sept. 2022 \
+Last updated: 14 Oct. 2024 \
 Authors: [Ron Olson](https://github.com/tachoknight), [Steven Van Impe](https://github.com/svanimpe)
