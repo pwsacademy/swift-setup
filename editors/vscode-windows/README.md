@@ -14,7 +14,7 @@ Out of the box, Visual Studio Code supports syntax highlighting and code formatt
 ✅ Quick help \
 ✅ Diagnostics \
 ✅ Fix-its \
-❌ Refactoring \
+✅ Refactoring \
 ✅ Run executables \
 ✅ Debugging \
 ✅ Testing
@@ -31,7 +31,7 @@ After installation, you can launch Visual Studio Code from the **Start** menu. Y
 code
 ```
 
-### Swift extension
+## Installing the Swift extension
 
 To install the Swift extension, select **View ▸ Extensions** from the menu bar, search “swift”, and install the extension published by the Swift Server Work Group:
 
@@ -39,15 +39,15 @@ To install the Swift extension, select **View ▸ Extensions** from the menu bar
 
 The Swift extension includes the [**CodeLLDB extension**](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb), on which it depends to run and debug programs using **LLDB**.
 
-After installation, the extension will prompt you to configure a Swift-specific version of LLDB:
+The first time it's activated, the extension will prompt you to configure a Swift-specific version of LLDB:
 
 ![](lldb.png)
 
-Select **Global** unless you intend to configure a custom version of LLDB.
+Select **Global** when you see this prompt.
 
-## Usage
+## Editing files
 
-To edit files with Visual Studio Code, select **File ▸ Open File...** from the menu bar or specify the files you want to open as arguments for the `code` command:
+To edit files with Visual Studio Code, select **File ▸ Open File...** from the menu bar, or specify the files you want to open as arguments for the `code` command:
 
 ```
 code hello.swift
@@ -57,7 +57,19 @@ code hello.swift
 
 If you specify a file that doesn’t exist, Visual Studio Code will create it for you. Alternatively, you can create files by selecting **File ▸ New File** from the menu bar.
 
-To edit a Swift package, select **File ▸ Open Folder...** from the menu bar and open the directory that contains the **Package.swift** file. On the command line, you specify this directory as an argument for the `code` command:
+## Editing packages
+
+To create a new Swift package with an executable program, open the **Explorer** (**View ▸ Explorer**) and select **Create Swift Project**:
+
+![](explorer.png)
+
+Then select **Executable**:
+
+![](create-package.png)
+
+To open an existing package, select **File ▸ Open Folder...** from the menu bar and open the directory that contains the **Package.swift** file.
+
+On the command line, you specify this directory as an argument for the `code` command:
 
 ```
 code hello
@@ -73,11 +85,7 @@ Unfortunately, Visual Studio Code will open an external terminal and you won’t
 
 If the terminal is hidden, select **View ▸ Terminal** from the menu bar to show it.
 
-If your package contains multiple executable targets, select **View ▸ Run** from the menu bar to open the **Run and Debug** view. There, you can select a target to run:
-
-![](run-debug.png)
-
-### Debugging
+## Debugging
 
 To debug a program, first set a breakpoint by clicking next to the line of code where you want the debugger to pause execution:
 
@@ -93,15 +101,13 @@ When you’re done debugging, use the **Stop** button on the floating toolbar or
 
 ## Testing
 
-To run unit tests, select **View ▸ Testing** from the menu bar to open the **Test Explorer**. There, you can either run all tests, or run a specific target, class, or test:
+To run unit tests, select **View ▸ Testing** from the menu bar to open the **Test Explorer**. There, you can either run all tests, or run specific tests or suites:
 
 ![](testing.png)
 
-If the Test Explorer shows a test discovery error, select **Terminal ▸ Run Build Task...** from the menu bar and run the **swift: Build All** task to build the test targets.
-
-Test results will appear in the integrated terminal, in the Test Explorer, and in the editor.
+Test results will appear in the Test Explorer, the Test Results pane, and in the editor.
 
 ---
 
-Last updated: 23 Sept. 2022 \
+Last updated: 4 Nov. 2024 \
 Author: [Steven Van Impe](https://github.com/svanimpe)

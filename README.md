@@ -13,7 +13,8 @@ We only provide instructions for the latest release of each supported platform. 
 - [Fedora 40](platforms/fedora/README.md)
 - [macOS Ventura](platforms/macOS/README.md)
 - [Ubuntu 24.04 LTS](platforms/ubuntu/README.md)
-- [Windows 10 / 11](platforms/windows/README.md)
+- [Windows 10](platforms/windows10/README.md)
+- [Windows 11](platforms/windows11/README.md)
 
 ## Editors and IDEs
 
