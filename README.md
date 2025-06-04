@@ -11,7 +11,7 @@ If you’re interested in learning Swift, please see our [Programming with Swift
 We only provide instructions for the latest release of each supported platform. These instructions *may* also apply to older releases:
 
 - [Fedora 40](platforms/fedora/README.md)
-- [macOS Ventura](platforms/macOS/README.md)
+- [macOS Sequoia](platforms/macOS/README.md)
 - [Ubuntu 24.04 LTS](platforms/ubuntu/README.md)
 - [Windows 10](platforms/windows10/README.md)
 - [Windows 11](platforms/windows11/README.md)
@@ -29,7 +29,7 @@ We only provide instructions for the latest release of each supported platform. 
 - [Visual Studio Code (Windows)](editors/vscode-windows/README.md)
     * Windows 10 / 11
 - [Xcode](editors/xcode/README.md)
-    * macOS Ventura
+    * macOS Sequoia
 
 ## Contributing
 

@@ -25,7 +25,7 @@ You’ve already installed Xcode as part of the installation instructions for Sw
 
 ## Usage
 
-You can use Xcode to create and edit Swift files, as well as edit and run Swift packages. Xcode also supports **playgrounds** that evaluate your code line-by-line.
+You can use Xcode to create and edit Swift files and packages. Xcode also supports **playgrounds** that evaluate your code line-by-line.
 
 ### Playgrounds
 
@@ -43,7 +43,7 @@ Replace the contents of this playground with your code, then use the circular bu
 
 ### Swift files
 
-To create a Swift file, select **File ▸ New ▸ File...** from the menu bar, then choose the **Swift File** template for macOS:
+To create a Swift file, select **File ▸ New ▸ File from Template...** from the menu bar, then choose the **Swift File** template for macOS:
 
 ![](macos-file.png)
 
@@ -61,7 +61,11 @@ xed main.swift
 
 ### Swift packages
 
-To edit a Swift package, open the **Package.swift** file in Xcode. This will load the entire package:
+To create a new Swift package with an executable program, select **File ▸ New ▸ Package...** from the menu bar, then choose the **Executable** template for macOS:
+
+![](package-new.png)
+
+To edit an existing package, open the **Package.swift** file in Xcode. This will load the entire package:
 
 ![](package.png)
 
@@ -87,5 +91,5 @@ To run your test targets, select **Product ▸ Test** from the menu bar, then se
 
 ---
 
-Last updated: 22 Sept. 2022 \
+Last updated: 4 Jun. 2025 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
