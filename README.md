@@ -18,11 +18,6 @@ We only provide instructions for the latest release of each supported platform. 
 
 ## Editors and IDEs
 
-- [Gedit](editors/gedit/README.md)
-    * Fedora 41
-    * Ubuntu 24.04
-- [Notepad++](editors/notepadplusplus/README.md)
-    * Windows 10 / 11
 - [Visual Studio Code (Linux)](editors/vscode-linux/README.md)
     * Fedora 41
     * Ubuntu 24.04
