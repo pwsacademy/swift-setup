@@ -18,10 +18,9 @@ We only provide instructions for the latest release of each supported platform. 
 
 ## Editors and IDEs
 
-- [Visual Studio Code (Linux)](editors/vscode-linux/README.md)
+- [Visual Studio Code](editors/vscode/README.md)
     * Fedora 41
     * Ubuntu 24.04
-- [Visual Studio Code (Windows)](editors/vscode-windows/README.md)
     * Windows 10 / 11
 - [Xcode](editors/xcode/README.md)
     * macOS Sequoia

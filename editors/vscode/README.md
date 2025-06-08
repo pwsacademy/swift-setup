@@ -19,40 +19,38 @@ Out of the box, Visual Studio Code supports syntax highlighting and code formatt
 ✅ Debugging \
 ✅ Testing
 
-## Installation
+## Installation on Windows
 
-On Linux, Visual Studio Code is distributed as a [**Snap**](https://snapcraft.io) package. The instructions below describe how you can use Snap to install Visual Studio Code for your distribution.
+Download and install Visual Studio Code from [code.visualstudio.com](https://code.visualstudio.com) or from the Microsoft Store:
 
-### Ubuntu
+![](microsoft-store.png)
 
-Ubuntu has built-in support for Snap. Run the following command to install Visual Studio Code: 
+After installation, you can launch Visual Studio Code from the **Start** menu. You can also launch it from the command line, using the **`code`** command:
 
 ```
-sudo snap install --classic code
+code
 ```
 
-### Fedora
+## Installation on Linux
 
-On Fedora, first install Snap with the following commands:
+On Linux, Visual Studio Code is distributed as a [**Snap**](https://snapcraft.io) package. 
+
+On Fedora, first install Snap with the following commands, then log out or restart your system:
 
 ```
 sudo dnf install -y snapd
 sudo ln -s /var/lib/snapd/snap /snap
 ```
 
-Now log out or restart your system, then install Visual Studio Code:
+Ubuntu has built-in support for Snap, so it doesn't require these steps.
+
+Run the following command to install Visual Studio Code: 
 
 ```
 sudo snap install --classic code
 ```
 
-## Getting started
-
-After installation, you can launch Visual Studio Code by pressing the **Super** (or **Command** or **Windows**) key and searching for it:
-
-![](launch.png)
-
-You can also launch it from the command line, using the **`code`** command:
+After installation, you can launch Visual Studio Code by pressing the **Super** (or **Command** or **Windows**) key and searching for it. You can also launch it from the command line, using the **`code`** command:
 
 ```
 code
@@ -79,6 +77,8 @@ If you specify a file that doesn’t exist, Visual Studio Code will create it fo
 If the file you’re editing contains top-level executable code, you can run it by opening the **Command Palette** (**View ▸ Command Palette...**) and selecting **Swift: Run Swift Script**:
 
 ![](run-file.png)
+
+> **Note**: This feature is unsupported on Windows.
 
 You’ll see the output of your program appear in the integrated terminal. If the terminal is hidden, select **View ▸ Terminal** from the menu bar to show it.
 
@@ -134,5 +134,5 @@ Test results will appear in the Test Explorer, the Test Results pane, and in the
 
 ---
 
-Last updated: 5 Jun. 2025 \
+Last updated: 8 Jun. 2025 \
 Author: [Steven Van Impe](https://github.com/svanimpe)
