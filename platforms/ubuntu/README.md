@@ -1,6 +1,6 @@
 # Ubuntu 24.04 LTS
 
-[**Ubuntu**](https://ubuntu.com) was the first Linux distribution to support Swift. Together with [Visual Studio Code](../../editors/vscode-linux/README.md), it makes an excellent development platform for students using Linux.
+[**Ubuntu**](https://ubuntu.com/desktop) was the first Linux distribution to support Swift. Together with [Visual Studio Code](https://code.visualstudio.com), it makes an excellent development platform for students using Linux.
 
 ## Installation
 
@@ -15,13 +15,13 @@ sudo apt install -y curl
 Next, use **curl** to download the Swiftly installer:
 
 ```
-curl -O https://download.swift.org/swiftly/linux/swiftly-1.0.0-$(uname -m).tar.gz
+curl -O https://download.swift.org/swiftly/linux/swiftly-1.0.1-$(uname -m).tar.gz
 ```
 
 Now unzip the file you just downloaded:
 
 ```
-tar -zxf swiftly-1.0.0-$(uname -m).tar.gz
+tar -zxf swiftly-1.0.1-$(uname -m).tar.gz
 ```
 
 And run it as follows:
@@ -38,9 +38,9 @@ Swiftly will list any dependencies that are missing on your system and shows you
 sudo apt-get -y install binutils git gnupg2 libcurl4-openssl-dev libgcc-13-dev libpython3-dev libstdc++-13-dev libxml2-dev libncurses-dev libz3-dev pkg-config zlib1g-dev
 ```
 
-> **⚠️ Warning**: Your system may require a different command. Always use the command printed by Swiftly, not this example.
+However, your system may require a different command. Always use the command printed by Swiftly, not this example!
 
-Swiftly will also show some additional commands needed to complete the installation process. Run these now:
+Swiftly will also show some additional commands you need to complete the installation process. Run these now:
 
 ```
 source ~/.local/share/swiftly/env.sh
@@ -55,5 +55,5 @@ swift --version
 
 ---
 
-Last updated: 4 Jun. 2025 \
+Last updated: 27 Sept. 2025 \
 Author: [Steven Van Impe](https://github.com/svanimpe)

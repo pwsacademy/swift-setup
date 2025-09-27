@@ -1,30 +1,23 @@
 # Swift Setup
 
-This repository describes how you can set up a development environment for the [Swift programming language](https://swift.org).
+This repository is a supporting resource for our [Programming with Swift: Fundamentals](https://www.pwsacademy.org/courses/pws-fundamentals.html) course. It describes how you can set up a development environment for the [Swift programming language](https://swift.org).
 
-Our goal is to support the adoption of Swift as a general purpose cross-platform programming language in education. To that end, we provide student-friendly instructions for various platforms, editors, and IDEs that support Swift.
+## Swift
 
-If you’re interested in learning Swift, please see our [Programming with Swift: Fundamentals](https://www.pwsacademy.org/courses/pws-fundamentals.html) course, for which this repository is a supporting resource.
+The following guides explain how you can install Swift on each supported platform. Choose the appropriate guide for your platform:
 
-## Platforms
-
-We only provide instructions for the latest release of each supported platform. These instructions *may* also apply to older releases:
-
-- [Fedora 41](platforms/fedora/README.md)
 - [macOS Sequoia](platforms/macOS/README.md)
 - [Ubuntu 24.04 LTS](platforms/ubuntu/README.md)
 - [Windows 10](platforms/windows10/README.md)
 - [Windows 11](platforms/windows11/README.md)
 
-## Editors and IDEs
+We only provide instructions for these specific releases. However, the instructions *may* also apply to newer or older releases.
 
-- [Visual Studio Code](editors/vscode/README.md)
-    * Fedora 41
-    * Ubuntu 24.04
-    * Windows 10 / 11
-- [Xcode](editors/xcode/README.md)
-    * macOS Sequoia
+## Visual Studio Code
 
-## Contributing
+[Visual Studio Code](https://code.visualstudio.com) is our recommended editor. The following guides explain how you can install Visual Studio Code and use it to create and run Swift packages:
 
-This repository is a community effort, so we welcome contributions. Please see our [guidelines](contributing.md) for writing instructions.
+- [Installation](vscode/installation/README.md)
+- [Using Swift Packages](vscode/packages/README.md)
+
+For more information, read the [Getting Started](https://www.pwsacademy.org/courses/pws-fundamentals/chapters/getting-started.html) chapter of the course.

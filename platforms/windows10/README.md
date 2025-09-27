@@ -34,7 +34,7 @@ With these components in place, you can now install Swift and its remaining depe
 winget install --id Swift.Toolchain --exact
 ```
 
-Finally, restart your terminal and verify that you can run the following command:
+Finally, restart your terminal and run the following command to verify which version of Swift you have installed:
 
 ```
 swift --version
@@ -42,11 +42,9 @@ swift --version
 
 ## Known issues
 
-- The REPL is currently unavailable on Windows ([#13804](https://bugs.swift.org/browse/SR-13804)).
-- Running source files with `swift` is currently unavailable on Windows ([#13805](https://bugs.swift.org/browse/SR-13805)).
 - Unicode output may not display properly on the command line.
 
 ---
 
-Last updated: 20 Oct. 2024 \
+Last updated: 27 Sept. 2025 \
 Authors: [Saleem Abdulrasool](https://github.com/compnerd), [Steven Van Impe](https://github.com/svanimpe)
